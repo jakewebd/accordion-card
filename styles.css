@@ -1,0 +1,230 @@
+@media screen and (min-width:431px) {
+    
+    body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Kumbh sans', serif;
+    background: linear-gradient(180deg,hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+}
+#main-container {
+    width: 70vw;
+    background-color: white;
+    height: 70vh;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+    position: relative;
+}
+#images-container {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+#girl-img {
+    position: relative;
+    width: 500px;
+    top: 60px;
+    right: 80px;
+    z-index: 2;
+}
+#box-img {
+    position: absolute;
+    z-index: 3;
+    top: 230px;
+    left: -90px;
+    top: 210px;
+}
+#girl-shadow {
+    position: absolute;
+    z-index: 1;
+    width: 900px;
+    right: 120px;
+    bottom: -120px;
+}
+#accordion-wrapper {
+    width: 50%;
+    position: relative;
+}
+.heading {
+    position: relative;
+    font-weight: 700;
+    top: 8vh;
+}
+.accordion-item {
+    border-bottom: 1px solid rgb(206, 206, 206);
+    position: relative;
+    top: 9vh;
+    width: 80%;
+}
+.question {
+    font-size: 1rem;
+    display: inline-block;
+}
+.answer {
+    font-size: 0.92rem;
+    opacity: 0.8;
+    margin-top: -5px;
+    overflow: hidden;
+    height: 0px;
+    transition: 0.5s;
+}
+.show-content {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 24px;
+    transition: 0.3s;
+    background: url(https://raw.githubusercontent.com/jakewebd/accordion-card/f93a61b69187ae6e63b4fc27f687baedab58ee2f/images/icon-arrow-down.svg) no-repeat;
+}
+.show-content:hover {
+    cursor: pointer;
+}
+.show-content:active {
+    transform: scale(90%);
+    cursor: pointer;
+}
+.attribution {
+    position: absolute;
+    bottom: 20px;
+     font-size: 11px; text-align: center; 
+}
+.attribution a {
+     color: darkslategrey; 
+ }
+
+}
+
+/*javascript styles */
+
+.active {
+height: 40px !important;
+}
+.qactive {
+    font-weight: bold;
+}
+.bactive {
+    transform: rotate(180deg);
+}
+
+/* mobile optimization */
+
+@media screen and (max-width:430px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        font-family: 'Kumbh sans', serif;
+        background: linear-gradient(180deg,hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    }
+    #main-container {
+        width: 85vw;
+        background-color: white;
+        height: 560px;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        position: relative;
+        top: 15vh;
+    }
+    #images-container {
+        width: 100%;
+        height: 20%;
+        position: relative;
+        display: f;
+    }
+    #girl-img {
+        position: relative;
+        width: 240px;
+        left: 55px;
+        bottom: 110px;
+        z-index: 2;
+    }
+    #box-img {
+        position: absolute;
+        z-index: 3;
+        top: -40px;
+        left: 45px;
+        width: 100px;
+    }
+    #girl-shadow {
+        position: absolute;
+        z-index: 1;
+        width: 250px;
+        right: 55px;
+        bottom: 5px;
+    }
+    #accordion-wrapper {
+        width: 100%;
+        height: 80%;
+        position: relative;
+    }
+    .heading {
+        position: relative;
+        font-weight: 700;
+        text-align: center;
+    }
+    .accordion-item {
+        border-bottom: 1px solid rgb(206, 206, 206);
+        position: relative;
+        margin: auto;
+        width: 90%;
+    }
+    .question {
+        font-size: 1rem;
+        display: inline-block;
+    }
+    .answer {
+        font-size: 0.92rem;
+        opacity: 0.8;
+        margin-top: -5px;
+        overflow: hidden;
+        height: 0px;
+        transition: 0.5s;
+    }
+    .show-content {
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        border: none;
+        position: absolute;
+        right: 0;
+        top: 24px;
+        transition: 0.3s;
+        background: url(https://raw.githubusercontent.com/jakewebd/accordion-card/f93a61b69187ae6e63b4fc27f687baedab58ee2f/images/icon-arrow-down.svg) no-repeat;
+    }
+    .show-content:hover {
+        cursor: pointer;
+    }
+    .show-content:active {
+        transform: scale(90%);
+        cursor: pointer;
+    }
+    .attribution {
+         font-size: 11px; text-align: center; 
+         position: absolute;
+         bottom: 20px;
+    }
+    .attribution a {
+         color: darkslategray; 
+     }
+
+}
