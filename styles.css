@@ -68,6 +68,10 @@
     font-size: 1rem;
     display: inline-block;
 }
+.question:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
 .answer {
     font-size: 0.92rem;
     opacity: 0.8;
@@ -210,6 +214,9 @@ height: 40px !important;
         top: 24px;
         transition: 0.3s;
         background: url(https://raw.githubusercontent.com/jakewebd/accordion-card/f93a61b69187ae6e63b4fc27f687baedab58ee2f/images/icon-arrow-down.svg) no-repeat;
+    }
+    .question:hover {
+        cursor: pointer;
     }
     .show-content:hover {
         cursor: pointer;
